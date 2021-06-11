@@ -1,11 +1,13 @@
-package service.impl;
+package com.chen.user.service.impl;
 
 
-import dao.AdminMapper;
-import entity.AdminVO;
+import com.chen.user.dao.AdminMapper;
+
+import com.chen.user.entity.AdminVO;
+import com.chen.user.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import service.AdminService;
+
 
 @Service
 public class AdminServiceImpl implements AdminService {
