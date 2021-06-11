@@ -1,10 +1,11 @@
-package com.chen.quartz.service.impl;
+package service.impl;
 
-import com.chen.quartz.dao.AdminMapper;
-import com.chen.quartz.entity.AdminVO;
-import com.chen.quartz.service.AdminService;
+
+import dao.AdminMapper;
+import entity.AdminVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import service.AdminService;
 
 @Service
 public class AdminServiceImpl implements AdminService {

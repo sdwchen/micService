@@ -1,4 +1,4 @@
-package com.chen.quartz.entity;
+package entity;
 
 import lombok.Data;
 

@@ -1,11 +1,11 @@
-package com.chen.quartz.controller;
+package controller;
 
-import com.chen.quartz.entity.AdminVO;
-import com.chen.quartz.service.AdminService;
-import com.chen.quartz.service.impl.AdminServiceImpl;
+import entity.AdminVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import service.AdminService;
+import service.impl.AdminServiceImpl;
 
 @RestController
 public class AdminController {

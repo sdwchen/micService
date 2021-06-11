@@ -1,6 +1,7 @@
-package com.chen.quartz.dao;
+package dao;
 
-import com.chen.quartz.entity.AdminVO;
+
+import entity.AdminVO;
 import org.springframework.stereotype.Component;
 
 @Component

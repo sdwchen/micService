@@ -6,6 +6,7 @@
     <modules>
         <module>quartz</module>
         <module>eurake</module>
+        <module>userService</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -31,6 +32,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -42,6 +48,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
