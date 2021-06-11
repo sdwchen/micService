@@ -17,7 +17,7 @@ public class AdminController {
 
     @GetMapping(value = "/findAllAdmin")
     public AdminVO findAllAdmin(){
-        System.out.printf("a");
+
         return adminService.findAllAdmin();
 
     }
