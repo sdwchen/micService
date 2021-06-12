@@ -18,6 +18,8 @@ public class QuartzConfig {
     public SchedulerFactoryBean schedulerFactoryBean() throws IOException {
         SchedulerFactoryBean factory = new SchedulerFactoryBean();
         factory.setQuartzProperties(quartzProperties());
+        // 用于quartz集群,QuartzScheduler 启动时更新己存在的Job
+        factory.setOverwriteExistingJobs(true);
         return factory;
     }
 
