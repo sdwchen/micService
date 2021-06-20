@@ -12,7 +12,7 @@ public class QuartzJob extends QuartzJobBean {
 
         JobDataMap dataMap = jobExecutionContext.getJobDetail().getJobDataMap();
         try {
-            System.out.println("key:" + key);
+            System.out.println("key:" + key.getGroup());
             Thread.sleep(10000);
 
             System.out.println("key:" + key + "   " + "value:" + dataMap);
