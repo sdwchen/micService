@@ -1,8 +1,5 @@
 package com.chen.quartz.service;
 
-import org.springframework.stereotype.Service;
-
-
 public interface QuartzService {
     /**
      * 新增一个定时任务

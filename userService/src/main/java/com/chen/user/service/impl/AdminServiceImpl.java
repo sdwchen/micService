@@ -18,6 +18,11 @@ public class AdminServiceImpl implements AdminService {
         return adminMapper.findAllAdmin();
     }
 
+    @Override public void createAdmin(AdminVO adminVO) {
+         System.out.println(adminVO);
+         adminMapper.createAdmin(adminVO);
+    }
+
     @Autowired
     public void setUserDao (AdminMapper adminMapper) {
         this.adminMapper = adminMapper;

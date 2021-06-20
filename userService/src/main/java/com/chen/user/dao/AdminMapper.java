@@ -10,4 +10,6 @@ public interface AdminMapper {
 
    AdminVO findAllAdmin();
 
+   void createAdmin(AdminVO adminVO);
+
 }

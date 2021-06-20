@@ -7,4 +7,6 @@ public interface AdminService {
 
     AdminVO findAllAdmin();
 
+    void createAdmin(AdminVO adminVO);
+
 }

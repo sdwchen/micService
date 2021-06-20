@@ -6,10 +6,10 @@ import com.chen.quartz.service.QuartzService;
 import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class QuartzServiceImpl implements QuartzService {
 
     @Autowired
@@ -34,8 +34,8 @@ public class QuartzServiceImpl implements QuartzService {
                     .startNow()
                     .withSchedule(CronScheduleBuilder.cronSchedule(cron))
                     .build();
-            scheduler.start();
             scheduler.scheduleJob(jobDetail, trigger);
+            scheduler.start();
         } catch (Exception e) {
             e.printStackTrace();
         }

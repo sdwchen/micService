@@ -15,8 +15,7 @@ spring:
     username: mysql
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-    #实体类的位置
-  type-aliases-package: com.chen.user.entity
+
 logging:
   level:
     com.chen.quartz.dao : debug

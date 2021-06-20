@@ -2,6 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.chen.user.dao.AdminMapper">
     <select id="findAllAdmin" resultType="com.chen.user.entity.AdminVO">
-        select user_id as userId,user_name As userName,password as password from admin
+        select user_id as userId, user_name As userName, password as password
+        from admin
     </select>
+    <insert id="createAdmin" parameterType="com.chen.user.entity.AdminVO">
+        insert into admin
+            (user_name, password)
+        values (
+                #{userName},
+                #{password}
+                )
+    </insert>
 </mapper>
