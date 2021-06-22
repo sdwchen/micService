@@ -19,3 +19,4 @@ mybatis:
 logging:
   level:
     com.chen.quartz.dao : debug
+  config: F:\ideaProject\micService\userService\src\main\resources\logback-dev.xml
